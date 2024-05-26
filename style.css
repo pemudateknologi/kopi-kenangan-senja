@@ -1,0 +1,447 @@
+/** @format */
+:root {
+  --coklat: rgb(184, 139, 109);
+}
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1.5px solid var(--coklat);
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgb(10, 10, 10);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+#humberger-menu {
+  display: none;
+}
+
+h1 span {
+  color: var(--coklat);
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-icons i {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+.navbar-icons a:hover {
+  color: var(--coklat);
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 5px 0;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.links a:hover {
+  border-bottom: 2px solid var(--coklat);
+  color: var(--coklat);
+}
+
+.main h1 {
+  color: var(--coklat);
+  font-size: 70px;
+}
+
+.main p {
+  color: white;
+  font-size: 20px;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 0 30px;
+  background-image: url(img/istockphoto-930780916-1024x1024.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container-about {
+  padding: 50px 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.judul-about h1 {
+  font-size: 40px;
+  color: var(--coklat);
+}
+
+.content-about .img-about img {
+  width: 400px;
+  height: 300px;
+  box-shadow: 5px 5px 20px var(--coklat);
+}
+
+.content-about {
+  margin-top: 50px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 5rem;
+}
+
+.artikel-about p {
+  color: white;
+}
+
+.artikel-about {
+  width: 500px;
+  height: auto;
+}
+
+.judul-menu h1 {
+  text-align: center;
+  color: var(--coklat);
+  font-size: 40px;
+  margin-top: 70px;
+}
+
+.container-card {
+  margin: 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  gap: 3rem;
+  justify-content: center;
+}
+
+.card {
+  height: auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img {
+  background-image: url(img/nathan-dumlao-nBJHO6wmRWw-unsplash.jpg);
+  width: 100%;
+  height: 240px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.info-card {
+  padding: 10px;
+  color: white;
+}
+
+.info-card button {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--coklat);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.star {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contact {
+  height: 100vh;
+  padding: 70px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.contact h1 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: var(--coklat);
+}
+
+.content-contact {
+  display: flex;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  border: 1px solid white;
+  justify-content: center;
+  padding: 30px;
+  gap: 2rem;
+  border-radius: 10px;
+}
+
+.maps {
+  width: 500px;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.daftar-contact {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.daftar-contact input {
+  padding: 15px;
+  outline: none;
+  border: 2px solid var(--coklat);
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.daftar-contact label {
+  color: white;
+}
+
+.daftar-contact button {
+  width: 20%;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 17px;
+  background-color: var(--coklat);
+  cursor: pointer;
+}
+
+.main-content {
+  width: 50%;
+}
+
+@media (max-width: 786px) {
+  .container-navbar .links {
+    position: absolute;
+    top: 100%;
+    right: -90%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .container-navbar .links.active {
+    right: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .links a {
+    color: var(--coklat);
+  }
+
+  .judul-navbar h1 {
+    font-size: 25px;
+  }
+
+  #humberger-menu {
+    display: block;
+  }
+
+  .navbar-icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .main h1 {
+    font-size: 30px;
+  }
+
+  .main p {
+    font-size: 16px;
+  }
+
+  .main {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content-about {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .daftar-contact {
+    display: inline-block;
+  }
+
+  .content-contact {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 1px solid white;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+
+  .maps {
+    width: 100%;
+  }
+
+  .maps iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .daftar-contact {
+    width: 300px;
+  }
+
+  .daftar-contact input {
+    padding: 7px;
+    outline: none;
+    border: 2px solid var(--coklat);
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .daftar-contact {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .daftar-contact button {
+    width: 40%;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 17px;
+    background-color: var(--coklat);
+    cursor: pointer;
+  }
+  .content-about .img-about img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 5px 5px 20px var(--coklat);
+  }
+
+  .content-about .img-about img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 5px 5px 20px var(--coklat);
+  }
+
+  .main-content {
+    width: 70%;
+  }
+
+  .main h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-about {
+    flex-direction: column;
+  }
+
+  .artikel-about {
+    width: 300px;
+    text-align: center;
+  }
+
+  .container-about {
+    margin-top: 20%;
+  }
+
+  .judul-navbar h1 {
+    font-size: 18px;
+  }
+
+  .container-navbar {
+    padding: 10px 10px;
+  }
+
+  .main {
+    padding: 10px 0px;
+  }
+
+  .main-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+
+  .contact {
+    padding: 10px 10px;
+  }
+
+  .container-menu {
+    padding: 10px 10px;
+  }
+
+  .main-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content p {
+    font-size: 15px;
+  }
+
+  .main h1 {
+    font-size: 40px;
+  }
+}
